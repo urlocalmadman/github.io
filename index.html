@@ -18,73 +18,20 @@
     color: #000 !important;
   }
 
-  .topnav {
-    overflow: hidden;
-    background-color: #0f001a;
+  .nav-link {
+    border-radius: 4px
   }
 
-  .topnav a {
-    float: left;
-    display: block;
-    color: #8000ff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  .nav-link:hover {
+    background-color: #8000ff !important;
+    color: #000 !important;
   }
 
-  .topnav a:hover {
-    background-color: #9300ff;
-    color: black;
+  .navbar-brand:hover {
+    background-color: #8000ff !important;
+    color: #000 !important;
   }
 
-  .topnav a.active {
-    background-color: #8000ff;
-    color: black;
-  }
-
-  .topnav .search-container {
-    float: right;
-  }
-
-  .topnav input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-  }
-
-  .topnav .search-container button {
-    float: right;
-    padding: 6px 15px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #8000ff;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-  }
-
-  .topnav .search-container button:hover {
-    background: #8000ff;
-  }
-
-  @media screen and (max-width: 600px) {
-    .topnav .search-container {
-      float: none;
-    }
-    .topnav a, .topnav input[type=text], .topnav .search-container button {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
-    }
-    .topnav input[type=text] {
-      border: 1px #8000ff;  
-    }
-  }
   </style>
 </head>
 <body style="background-color: #0f001a">
@@ -95,7 +42,7 @@
     <span class="navbar-toggler-line" style="width: 100%; float: left; height: 3px; background-color: #000; margin-bottom: 5px;"></span>
     <span class="navbar-toggler-line" style="width: 100%; float: left; height: 3px; background-color: #000; margin-bottom: 5px;"></span>
   </button>
-  <a class="navbar-brand" href="#" style="color: #8000ff">Home<span class="sr-only">Home</span></a>
+  <a class="navbar-brand" href="#" style="color: #8000ff; border-radius: 4px; padding-right: 8px; padding-left: 8px">Home<span class="sr-only">Home</span></a>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
