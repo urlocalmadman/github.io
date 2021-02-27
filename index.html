@@ -6,6 +6,7 @@
   <meta name="author" content="Hari Shankar(PythonMyWaifu#0712) and Tejas Vipin(urlocalmadman#3888)">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -19,7 +20,12 @@
   }
 
   .nav-link {
-    border-radius: 4px
+    border-radius: 4px;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
   }
 
   .nav-link:hover {
@@ -27,9 +33,31 @@
     color: #000 !important;
   }
 
+  .navbar-brand {
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+  }
+
   .navbar-brand:hover {
     background-color: #8000ff !important;
     color: #000 !important;
+  }
+
+  .mainbutton {
+    border: 2px solid #8f00ff;
+    background-color: #0f001a;
+    border-radius: 4px;
+    color: white;
+    font-family: abel;
+    font-size: max(1.5vw, 1.5%);
+    text-align: center;
+    padding-top: max(1.5vw, 1%);
+    padding-bottom: max(1.5vw, 1%);
+    padding-right: max(1vw, 1.5%);
+    padding-left: max(1vw, 1.5%);
   }
 
   </style>
@@ -37,7 +65,7 @@
 <body style="background-color: #0f001a">
 
 <nav class="navbar navbar-expand-lg" style="background-color: #0f001a;">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" style="width: 47px; height: 34px; background-color: #8000ff;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" style="width: 37px; height: 34px; background-color: #8000ff;">
     <span class="navbar-toggler-line" style="width: 100%; float: left; height: 3px; background-color: #000; margin-bottom: 5px;"></span>
     <span class="navbar-toggler-line" style="width: 100%; float: left; height: 3px; background-color: #000; margin-bottom: 5px;"></span>
     <span class="navbar-toggler-line" style="width: 100%; float: left; height: 3px; background-color: #000; margin-bottom: 5px;"></span>
@@ -64,12 +92,15 @@
 </nav>
 
 
-<div class="jumbotron" style="background: none">
+<div class="jumbotron" style="background: none; padding: 0vw">
   <div class="container">
     <h1></h1>
     <p></p>
   </div>
 </div>
+
+<p style="color: #A9A9A9; text-align: center; font-size: max(2vw, 125%)"><i>If God doesn't delete this bot, I will</i></p>
+<p style="color: #A9A9A9; text-align: center; font-size: max(1vw, 75%); margin-left: 20vw; padding-bottom: 3.5vw"><i>-probably ur mom</i></p>
 
 <div class="jumbotron" style="background-image: url(https://media.discordapp.net/attachments/678099884674514974/815211584376274944/treywayex.webp?width=1440&height=348); background-size: cover" >
   <div class="container">
@@ -77,6 +108,8 @@
     <p style="font-size: max(1.25vw, 90%); text-align: center">Just when you thought you hit the limits of retardedness...</p>
   </div>
 </div>
+
+<center><button class="mainbutton">Add the bot!</button> <button class="mainbutton">Support server link!</button></center>
 
 </body>
 </html>
