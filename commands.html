@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>heroku magnet</title>
+  <meta name="description" content="Website for the Discord Bot urlocalmoderator">
+  <meta name="author" content="Hari Shankar(PythonMyWaifu#0712) and Tejas Vipin(urlocalmadman#3888)">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  @import url(https://fonts.googleapis.com/css?family=Raleway);
+  * {box-sizing: border-box;}
+
+  .btn-outline-success:hover {
+    background-color: #8000ff !important;
+    color: #000 !important;
+  }
+  .btn-outline-success span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .btn-outline-success span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .btn-outline-success:hover span {
+    padding-right: 15px;
+  }
+
+  .btn-outline-success:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .nav-link {
+    border-radius: 4px;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+  }
+
+  .nav-link:hover {
+    background-color: #8000ff !important;
+    color: #000 !important;
+  }
+
+  .nav-link:active {
+    background-color: #8000ff !important;
+    color: #000 !important;
+  }
+
+  .navbar-brand {
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+  }
+
+  .navbar-brand:hover {
+    background-color: #8000ff !important;
+    color: #000 !important;
+  }
+
+  .accordbutton {
+    border: 2px solid #8f00ff;
+    background-color: #0f001a;
+    border-radius: 4px;
+    color: white;
+    font-family: abel;
+    font-size: max(1.25vw, 100%);
+    text-align: left;
+    padding-top: max(1vw, 1%);
+    padding-bottom: max(1vw, 1%);
+    padding-right: max(0.75vw, 1.25%);
+    padding-left: max(0.75vw, 1.25%);
+    width: 100%;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+  }
+
+  .accordbutton:hover {
+    background-color: #8f00ff;
+    color: black;
+  }
+
+  .accordbutton:focus {
+    background-color: #8f00ff;
+    color: black;
+    box-shadow: 0px 0px 50px 1px #8f00ff
+  }
+
+  .wrapword {
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+    word-break: break-all;
+    white-space: normal;
+}
+
+  </style>
+</head>
+<body style="background-color: #0f001a">
+
+<nav class="navbar navbar-expand-lg" style="background-color: #0f001a;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" style="width: 47px; height: 34px; background-color: #8000ff;">
+    <span class="navbar-toggler-line" style="width: 100%; float: left; height: 3px; background-color: #000; margin-bottom: 5px;"></span>
+    <span class="navbar-toggler-line" style="width: 100%; float: left; height: 3px; background-color: #000; margin-bottom: 5px;"></span>
+    <span class="navbar-toggler-line" style="width: 100%; float: left; height: 3px; background-color: #000; margin-bottom: 5px;"></span>
+  </button>
+  <a class="navbar-brand" href="#" style="color: #8000ff; border-radius: 4px; padding-right: 8px; padding-left: 8px">Home<span class="sr-only">Home</span></a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="color: #8000ff">About<span class="sr-only">About</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: #8000ff">Commands<span class="sr-only">Commands</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: #8000ff">Donate<span class="sr-only">Donate</span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Enter gay words here..." aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: #8000ff; border-color: #8000ff;" ><span>GO</span></button>
+    </form>
+  </div>
+</nav>
+
+<p style="color: #A9A9A9;padding-top: 5vw; text-align: center; font-size: max(2vw, 150%);"><i>All the stupid shit you can do</i></p>
+
+<div class="container">
+  <button type="button" class="accordbutton" data-toggle="collapse" data-target="#mutetext">Mute</button>
+  <div id="mutetext" class="collapse">
+    <p class="wrapword" style="color: white; font-size: max(1.2vw, 95%); font-family: abel"><br><mark style="background-color: #D3D3D3">!mute <@user or user id> &lttime&gt &ltreason(optional)&gt</mark><br>Mutes the user for the specified amount of time(hours = h, minutes = m seconds = s).<br>If not specified, time defaults to 30 minutes.<br>Example: !mute @retard 30m spamming. This mutes the user @retard for 30 minutes for spamming(lives up to his name).
+    </p>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <button type="button" class="accordbutton" data-toggle="collapse" data-target="#unmutetext">Unmute</button>
+  <div id="unmutetext" class="collapse">
+    <p class="wrapword" style="color: white; font-size: max(1.2vw, 95%); font-family: abel"><br><mark style="background-color: #D3D3D3">!unmute <@user or user id></mark><br>Unmutes a previously muted user.<br>Example: !unmute @retard. The user retard will have the muted role removed(if he had it previously).
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
