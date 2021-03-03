@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>heroku magnet</title>
+  <meta name="description" content="Website for the Discord Bot urlocalmoderator">
+  <meta name="author" content="Hari Shankar(PythonMyWaifu#0712) and Tejas Vipin(urlocalmadman#3888)">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  @import url(https://fonts.googleapis.com/css?family=Raleway);
+  * {box-sizing: border-box;}
+
+  .btn-outline-success:hover {
+    background-color: #8000ff !important;
+    color: #000 !important;
+  }
+  .btn-outline-success span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .btn-outline-success span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .btn-outline-success:hover span {
+    padding-right: 15px;
+  }
+
+  .btn-outline-success:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .nav-link {
+    border-radius: 4px;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+  }
+
+  .nav-link:hover {
+    background-color: #8000ff !important;
+    color: #000 !important;
+  }
+
+  .nav-link:active {
+    background-color: #8000ff !important;
+    color: #000 !important;
+  }
+
+  .navbar-brand {
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+  }
+
+  .navbar-brand:hover {
+    background-color: #8000ff !important;
+    color: #000 !important;
+  }
+
+  .pat {
+    background-image: url(https://images-ext-2.discordapp.net/external/_aAZQQTMaeSPUELDtoTp_Gx6xwjF4QkNLJ8fawECLNI/http/www.simpleimageresizer.com/_uploads/photos/8b1afec0/patreon_64x64.jpg);
+    border-color: #0f001a;
+    padding: 20px;
+    font-size: 30px;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+}
+  </style>
+</head>
+<body style="background-color: #0f001a; padding-bottom: 50px">
+
+<nav class="navbar navbar-expand-lg" style="background-color: #0f001a;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" style="width: 47px; height: 34px; background-color: #8000ff;">
+    <span class="navbar-toggler-line" style="width: 100%; float: left; height: 3px; background-color: #000; margin-bottom: 5px;"></span>
+    <span class="navbar-toggler-line" style="width: 100%; float: left; height: 3px; background-color: #000; margin-bottom: 5px;"></span>
+    <span class="navbar-toggler-line" style="width: 100%; float: left; height: 3px; background-color: #000; margin-bottom: 5px;"></span>
+  </button>
+  <a class="navbar-brand" href="https://urlocalmadman.github.io/index" style="color: #8000ff; border-radius: 4px; padding-right: 8px; padding-left: 8px">Home<span class="sr-only">Home</span></a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://urlocalmadman.github.io/about" style="color: #8000ff">About<span class="sr-only">About</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://urlocalmadman.github.io/commands" style="color: #8000ff">Commands<span class="sr-only">Commands</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://urlocalmadman.github.io/donate" style="color: #8000ff">Donate<span class="sr-only">Donate</span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" action="/data" method="POST">
+      <input class="form-control mr-sm-2" type="search" placeholder="Enter gay words here..." aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: #8000ff; border-color: #8000ff;" ><span>GO</span></button>
+    </form>
+  </div>
+</nav>
+
+<main>
+  <p style="color: #A9A9A9; text-align: center; font-size: max(4vw, 300%);"><i>Donate</i></p>
+</main>
+
+<p align="center" style="color: #A9A9A9;; font-size: max(1.5vw, 100%);">Enjoy multiple perks after becoming a paid member of our subscription such as<br>-Server stats<br>-Audit loggers<br>And lots more!</p>
+
+<center><a href="https://www.patreon.com/">‎‎<button class="pat"></button></a></center>
+
+</body>
+</html>
