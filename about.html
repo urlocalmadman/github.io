@@ -77,8 +77,15 @@
     color: #000 !important;
   }
 
-  .card {
+  .card-left {
     border-color: #0f001a;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    width:26vw;
+    height: 36.5vw;
+    position: absolute;
+    left: 800px;
     -webkit-transition: all 0.1s ease-out;
     -moz-transition: all 0.1s ease-out;
     -o-transition: all 0.1s ease-out;
@@ -87,7 +94,27 @@
     transform: scale(0.85);
   }
 
-  .card:hover {
+  .card-right {
+    border-color: #0f001a;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    width:400px;
+    position: absolute;
+    right: 800px;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    transform: scale(0.85);
+  }
+
+  .card-right:hover {
+    transform: scale(0.95);
+  }
+
+  .card-left:hover {
     transform: scale(0.95);
   }
 
@@ -132,8 +159,8 @@
 
 <center>
 <div style="position: relative">
-  <div class="card" style="width:400px; position: absolute; left: 800px">
-    <img class="card-img-top" src="https://media.discordapp.net/attachments/678099884674514974/816710145424752640/story-rebeccame-wholesome-anime-memes-supports-head-pats-for-cat.jpg" alt="hmm urlocalmadman's av was supposed to show up here" style="width:100%">
+  <div class="card-left">
+    <img class="card-img-top" src="https://media.discordapp.net/attachments/678099884674514974/816710145424752640/story-rebeccame-wholesome-anime-memes-supports-head-pats-for-cat.jpg" alt="hmm urlocalmadman's av was supposed to show up here" style="width: 400px; height: 400px; object-fit: cover;">
     <div class="card-body">
       <h4 class="card-title">urlocalmadman</h4>
       <p class="card-text">Front end website. Discord bot</p>
@@ -141,7 +168,7 @@
      </div>
   </div>
   
-  <div class="card" style="width:400px; position: absolute; right: 800px">
+  <div class="card-right">
     <img class="card-img-top" src="https://cdn.discordapp.com/avatars/750227814606962748/1c627c03c8042281a2381070f8c21d32.png?size=256" alt="hmm PythonMyWaifu's av was supposed to show up here" style="width:100%">
     <div class="card-body">
       <h4 class="card-title">PythonMyWaifu</h4>
